@@ -1,7 +1,7 @@
 # TFI-DataProcessor 
-This project consists the source code of the TFI-DataProcessor databricks job. 
+This project consists the source code of the TFI-DataProcessor Databricks job. 
 <br><br>
-This job processes the relevant mater data of the TFI product. This includes transformations which apply business logic and analysis towards deriving analytics insights from the data.
+This job processes the relevant master data of the TFI product. This includes transformations which apply business logic and analysis towards deriving analytics insights from the data.
 <br><br>
 Finally, this process results with the analytics data which is loaded to analytics data. From there it can be later consumed for further data analysis or reports.
 <br><br>
