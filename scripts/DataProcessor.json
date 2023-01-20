@@ -1,0 +1,22 @@
+{
+  "name": "job-processor-tfi",
+  "new_cluster": {
+    "spark_version": "7.3.x-scala2.12",
+    "node_type_id": "Standard_DS3_v2",
+    "num_workers": 2
+  },
+  "libraries": [
+    {
+      "jar": "dbfs:/tmp/jars/tfi-dataprocessor/tfi-dataprocessor.jar"
+    }
+  ],
+  "email_notifications": {
+    "on_start": [],
+    "on_success": [],
+    "on_failure": ["lavdishala@msn.com"]
+  },
+  "spark_jar_task": {
+    "main_class_name": "com.apio.tfi.processor.DataProcessorBootstrap",
+    "parameters": ["/mnt/raw-data/ConfigFiles/TFI-DataProcessor.conf"]
+  }
+}
